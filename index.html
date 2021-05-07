@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" href="./bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Coming soon | Deep Developers</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <script defer="defer" src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" integrity="sha384-haqrlim99xjfMxRP6EWtafs0sB1WKcMdynwZleuUSwJR0mDeRYbhtY+KPMr+JL6f" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div class="card">
+      <div class="card-body">
+        <div class="row " style="height:100%; ">
+          <div class="col-md-6 col-12 py-3 order-md-1 order-2">
+            <div class="text-area">
+              <small>Coming soon</small>
+              <h1>Deep Developers</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure .</p>
+              <span style="display:flex; align-items:center;">
+              <h1 style="text-align:left; margin-top:20px;" id="demo"></h1>
+              <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="circle-notch" class="svg-inline--fa fa-circle-notch fa-w-16 spinner1" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="#006e50" d="M288 39.056v16.659c0 10.804 7.281 20.159 17.686 23.066C383.204 100.434 440 171.518 440 256c0 101.689-82.295 184-184 184-101.689 0-184-82.295-184-184 0-84.47 56.786-155.564 134.312-177.219C216.719 75.874 224 66.517 224 55.712V39.064c0-15.709-14.834-27.153-30.046-23.234C86.603 43.482 7.394 141.206 8.003 257.332c.72 137.052 111.477 246.956 248.531 246.667C393.255 503.711 504 392.788 504 256c0-115.633-79.14-212.779-186.211-240.236C302.678 11.889 288 23.456 288 39.056z"></path></svg>
+            </span>
+
+              <div class="wrapper">
+                <form role="search" method="get" class="search-form form" action="">
+                  <label>
+                    <span class="screen-reader-text">Search for...</span>
+                    <input type="email" class="search-field" placeholder="Enter your email" value="" name="s" title=""/>
+                  </label>
+                  <input type="submit" class="search-submit button" value="submit"/>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-12 py-3 my-auto order-md-2 order-1">
+            <img src="images/undraw_coding_6mjf.svg" class="up-down" alt="" style="width:100%;">
+          </div>
+        </div>
+        <small class="copyright" style="display:block;width:100%; text-align:center;"><i class="far fa-copyright"></i> 2021-2023 Deep Developers</small>
+      </div>
+    </div>
+    <script>
+      // Set the date we're counting down to
+      var countDownDate = new Date("Aug 8, 2021 15:37:25").getTime();
+
+      // Update the count down every 1 second
+      var x = setInterval(function () {
+
+        // Get today's date and time
+        var now = new Date().getTime();
+
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Output the result in an element with id="demo"
+        document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+        // If the count down is over, write some text
+        if (distance < 0) {
+          clearInterval(x);
+          document.getElementById("demo").innerHTML = "Wait for few movements";
+        }
+      }, 1000);
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+  </body>
+
+</html>
