@@ -32,9 +32,10 @@ small.copyright{
   justify-content: center;
 }
 
-.wrapper {
+.wrappes {
   margin-top: 20px;
-  /* display: flex; */
+  max-width: 90%;
+  display: block;
   /* justify-content:flex-start; */
   /* align-items: flex-start; */
 }
@@ -61,12 +62,12 @@ input:focus {
   border-color: #f9d342;
   outline: none;
 }
-
+form {
+  max-width: 100%;
+}
 form.search-form {
   display: flex;
   justify-content: center;
-}
-form.search-form>*{
 }
 
 input.search-field {
