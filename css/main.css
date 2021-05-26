@@ -5,6 +5,14 @@ body{
   min-height: 96vh;
   margin: 2vh 2vh;
   display: table;
+  position: relative;
+}
+.toast{
+  position: absolute;
+  top: 10px;
+  right: 3vh;
+  margin-left: 3vh;
+  max-width: 80%;
 }
 .card-body{
   display: table-cell;
@@ -13,7 +21,7 @@ body{
   position: relative;
 }
 small.copyright{
-  position: relative;
+  position: p;
   padding-top: 20px;
 }
 
@@ -26,9 +34,9 @@ small.copyright{
 
 .wrapper {
   margin-top: 20px;
-  display: flex;
-  justify-content:flex-start;
-  align-items: flex-start;
+  /* display: flex; */
+  /* justify-content:flex-start; */
+  /* align-items: flex-start; */
 }
 
 
@@ -40,7 +48,6 @@ input{
   border-radius: 0.25rem;
   border: 1px solid #e0e0e5;
   font-size: 1rem;
-  width: 100%;
   line-height: 2;
   padding: 0.375rem 1.25rem;
   -webkit-transition: border-color 0.2s;
@@ -59,13 +66,7 @@ form.search-form {
   display: flex;
   justify-content: center;
 }
-
-label {
-  flex-grow: 1;
-  flex-shrink: 0;
-  flex-basis: auto;
-  align-self: center;
-  margin-bottom: 0;
+form.search-form>*{
 }
 
 input.search-field {
@@ -79,7 +80,7 @@ input.search-field {
   border-bottom-right-radius: 0;
 }
 
-input.search-submit {
+.search-submit {
   height: 51px;
   margin: 0;
   padding: 1rem 1.3rem;
